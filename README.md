@@ -1,4 +1,4 @@
-# Nano-vLLM
+# Nano-vLLM (edited by sujkilla 06/30/2025)
 
 A lightweight vLLM implementation built from scratch with support for multiple model architectures.
 
@@ -16,7 +16,7 @@ A lightweight vLLM implementation built from scratch with support for multiple m
 - Qwen3-0.6B, 1.8B, 4B, 8B, 14B, 32B
 - Original focus of the nano-vLLM implementation
 
-### Llama 3.1 Models  
+### Llama 3.1 Models (sujkilla 06/30/2025)
 - Llama-3.1-8B, 70B (8B focus for this implementation)
 - Features grouped query attention (GQA)
 - No query/key normalization (vs Qwen3)
@@ -37,7 +37,7 @@ huggingface-cli download --resume-download Qwen/Qwen3-0.6B \
   --local-dir-use-symlinks False
 ```
 
-### Llama 3.1 8B Model
+### Llama 3.1 8B Model (sujkilla 06/30/2025)
 ```bash
 huggingface-cli download meta-llama/Llama-3.1-8B-Instruct \
   --local-dir ~/huggingface/Llama-3.1-8B-Instruct/ \
@@ -74,7 +74,7 @@ print(outputs[0]["text"])
 python example.py
 ```
 
-### Llama 3.1 Example
+### Llama 3.1 Example (sujkilla 06/30/2025)
 ```bash
 python example_llama.py
 ```
@@ -84,7 +84,7 @@ python example_llama.py
 Multiple benchmark scripts are available for performance testing:
 
 - **`bench.py`** - Original Qwen3 benchmark
-- **`bench_llama.py`** - Llama 3.1 8B benchmark  
+- **`bench_llama.py`** - Llama 3.1 8B benchmark (sujkilla 06/30/2025)
 - **`bench_comparison.py`** - Side-by-side model comparison
 
 ### Run Comparison Benchmark
@@ -107,7 +107,7 @@ python bench_comparison.py
 | vLLM           | 133,966     | 98.37    | 1361.84               |
 | Nano-vLLM      | 133,966     | 93.41    | 1434.13               |
 
-### Model Architecture Comparison
+### Model Architecture Comparison (sujkilla 06/30/2025)
 
 | Feature | Qwen3 | Llama 3.1 |
 |---------|-------|-----------|
@@ -119,7 +119,7 @@ python bench_comparison.py
 | Architecture Focus | Efficiency | Scale |
 
 
-## Implementation Details
+## Implementation Details (sujkilla 06/30/2025)
 
 ### Llama 3.1 Architecture Implementation
 
